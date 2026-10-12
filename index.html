@@ -3,210 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dammu Gnaneshwar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Dammu Gnaneshwar, a full-stack software developer creating thoughtful digital experiences.">
+    <title>Dammu Gnaneshwar | Full-stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .contact-card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .contact-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .contact-card i {
-            font-size: 2rem;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        .contact-card a, .contact-card p {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-            margin: 5px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Dammu Gnaneshwar</div>
-            <div style="flex:1"></div>
-            <div class="menu-toggle" id="mobile-menu" aria-label="Open navigation" aria-expanded="false" tabindex="0">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="logo" href="#home" aria-label="Dammu Gnaneshwar home"><span>DG</span> Gnaneshwar.</a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Open navigation" aria-expanded="false" type="button">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a class="nav-cta" href="mailto:gnaneshwardammu@gmail.com">Let's talk <i class="fas fa-arrow-up-right-from-square"></i></a>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Dammu Gnaneshwar</span></h1>
-            <p>Software Developer | Web Enthusiast | Problem Solver</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-        <div class="hero-photo">
-            <img src="gnan-resume.jpg" alt="Gnaneshwar">
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>I am a passionate software developer specializing in full-stack development. My experience spans web  app development, focusing on creating scalable, responsive applications that are both user-friendly and efficient.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Technical Skills</h3>
-                <p>C, Java, Fundamentals of Python</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-user-friends"></i>
-                <h3>Soft Skills</h3>
-                <p>Time Management, Discipline, Problem Solving, Team Collaboration</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, Beginner React.js</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="QR-Code-Generator.png" alt="easy-qr-grabber">
-                <div class="project-info">
-                    <h3>QR-Code-Generator</h3>
-                    <p>This simple web-based QR Code Generator provides a dead simple way to generate QR-Codes from URLs, Text Messages, Phone Numbers and Free Text.</p>
-                    <a href="https://easy-qr-grabber.vercel.app/" class="btn" target="_blank">View Project</a>
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+                <h1>Building digital<br><em>experiences</em> that matter.</h1>
+                <p class="hero-copy">I'm Dammu Gnaneshwar, a full-stack developer who turns complex ideas into clean, scalable, and engaging products.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">Explore my work <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://drive.google.com/file/d/1vG4kZ831IWZsc0cW-xERlyHNPGkiJSJ_/view?usp=drive_link" class="text-link" target="_blank" rel="noopener noreferrer">View resume <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="hero-meta">
+                    <span>Based in India</span>
+                    <span class="meta-line"></span>
+                    <span>Open to remote</span>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="detection-of-employee-stress.jpg" alt="Detection-of-Employee-Stress-Using-ML">
-                <div class="project-info">
-                    <h3>Detection-of-Employee-Stress-Using-ML</h3>
-                    <p>Developed a machine learning model that accurately detects employee stress levels from tweets using NLP and classifiers like SVM and Random Forest.</p>
-                    <a href="https://github.com/gnaneshwardammu/Detection-of-Employee-Stress-Using-ML" class="btn">View Project</a>
+            <div class="hero-visual">
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+                <div class="portrait-frame">
+                    <img src="GnanLinkedin.png" alt="Portrait of Dammu Gnaneshwar">
                 </div>
+                <div class="visual-note note-top"><i class="fas fa-code"></i><span>Code with purpose</span></div>
+                <div class="visual-note note-bottom"><strong>06+</strong><span>featured projects</span></div>
             </div>
-            <div class="project-card">
-                <img src="chatbot.png" alt="Chatbot">
-                <div class="project-info">
-                    <h3>Chatbot</h3>
-                    <p>This chatbot project is an AI-powered interactive assistant designed to engage users in real-time conversations.</p>
-                    <a href="https://gnaneshwardammu.github.io/Chatbot/" class="btn" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="resume" class="resume">
-        <h2>Resume</h2>
-        <div class="resume-content">
-            <a href="https://drive.google.com/file/d/1orOY3tC-siS4aqHDWFPB6Oub60yp8zok/view?usp=sharing" class="btn" target="_blank">View My Resume</a>
-        </div>
-    </section> 
+        <section id="about" class="section container about-section">
+            <div class="section-heading">
+                <p class="eyebrow">01 — About me</p>
+                <h2>Curious mind.<br><em>Purposeful work.</em></h2>
+            </div>
+            <div class="about-copy">
+                <p>I enjoy working at the intersection of design, engineering, and problem solving. My focus is on building responsive applications that feel simple to use and are built to last.</p>
+                <p>From intuitive interfaces to reliable backend systems, I care about the details that turn a good product into a memorable one.</p>
+                <a class="text-link" href="mailto:gnaneshwardammu@gmail.com">Let's create something great <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-grid">
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <p>Email</p>
-                <a href="mailto:gnaneshwardammu@gmail.com">gnaneshwardammu@gmail.com</a>
+        <section id="skills" class="section container skills-section">
+            <div class="section-heading centered">
+                <p class="eyebrow">02 — What I do</p>
+                <h2>Tools for turning<br><em>ideas into impact.</em></h2>
             </div>
-            <div class="contact-card">
-                <i class="fas fa-phone"></i>
-                <p>Phone</p>
-                <p>+91-9390194946</p>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Full-stack development</h3>
+                    <p>Creating dependable products across the stack, from polished frontends to secure APIs and services.</p>
+                    <div class="tag-list"><span>Java</span><span>Spring Boot</span><span>React</span><span>Node.js</span> <span>MySQL</span> <span>JWT</span> <span>JavaScript</span> <span>Leaflet</span> <span>REST API</span></div>
+                </article>
+                <article class="skill-card">
+                    <div class="card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3>Product-minded design</h3>
+                    <p>Translating user needs into clear, accessible experiences with thoughtful interactions and visual systems.</p>
+                    <div class="tag-list"><span>UI design</span><span>Responsive web</span><span>UX thinking</span></div>
+                </article>
+                <article class="skill-card">
+                    <div class="card-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3>Modern workflow</h3>
+                    <p>Using practical tools and engineering habits to ship quality work efficiently and keep improving it.</p>
+                    <div class="tag-list"><span>Git</span><span>Docker</span><span>SQL</span><span>APIs</span> <span>Microservices</span><span>Swagger</span> <span>Postman</span></div>
+                </article>
             </div>
-            <div class="contact-card">
-                <i class="fab fa-github"></i>
-                <p>GitHub</p>
-                <a href="https://github.com/gnaneshwardammu" target="_blank">github.com/gnaneshwardammu</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; Dammu Gnaneshwar. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/gnaneshwar-dammu-055233349" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/gnaneshwardammu" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://voice-generator-tawny.vercel.app" target="_blank"><i class="fas fa-microphone"></i></a>
-        </div>
+        <section id="projects" class="section container projects-section">
+            <div class="section-heading project-heading">
+                <div><p class="eyebrow">03 — Selected work</p><h2>A few things I've<br><em>built with care.</em></h2></div>
+                <p class="heading-aside">A selection of projects exploring real-world problems, meaningful interfaces, and modern technology.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card project-featured">
+                    <a class="project-image" href="https://medi-find-five.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Medfind.png" alt="Medfind medicine locator platform"></a>
+                    <div class="project-info"><div class="project-topline"><span class="project-number">01</span><span class="project-type">Web platform</span></div><h3>Medfind</h3><p>A medicine locator platform that helps people find nearby pharmacies and check real-time availability.</p><div class="project-footer"><span>React · React-Leaflet ·  TypeScript · Supabase · Node.js  · Gemini AI</span><a href="https://medi-find-five.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Medfind project"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="https://github.com/sssituser/javaproject1" target="_blank" rel="noopener noreferrer"><img src="Bike_rental.png" alt="Bike Rental System"></a>
+                    <div class="project-info"><div class="project-topline"><span class="project-number">02</span><span class="project-type">Full-stack app</span></div><h3>Bike Rental System</h3><p>A bike rental platform with role-based access and Owner/customer/Admin management with live ride tracking, enabling bike owners to list their bikes for hourly rentals..</p><div class="project-footer"><span>Spring Boot · React · MySQL · JWT · Leaflet · REST ApI · Swagger </span><a href="https://github.com/sssituser/javaproject1" target="_blank" rel="noopener noreferrer" aria-label="View Bike Rental System project"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="https://kurukshetra-tales.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="Mahabharat.png" alt="Kurukshetra Tales storytelling platform"></a>
+                    <div class="project-info"><div class="project-topline"><span class="project-number">03</span><span class="project-type">Storytelling</span></div><h3>Kurukshetra Tales</h3><p>A responsive storytelling platform exploring all 18 Parvas of the Mahabharata.</p><div class="project-footer"><span>React · UI development</span><a href="https://kurukshetra-tales.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Kurukshetra Tales project"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+                </article>
+                <article class="project-card">
+                    <a class="project-image" href="https://easy-qr-grabber.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="QR-Code-Generator.png" alt="QR Code Generator"></a>
+                    <div class="project-info"><div class="project-topline"><span class="project-number">04</span><span class="project-type">Utility</span></div><h3>Easy QR Grabber</h3><p>A simple, focused tool for generating QR codes from text, links, and phone numbers.</p><div class="project-footer"><span>JavaScript · Web APIs</span><a href="https://easy-qr-grabber.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Easy QR Grabber project"><i class="fas fa-arrow-up-right-from-square"></i></a></div></div>
+                </article>
+            </div>
+            <div class="more-projects"><span>More experiments on GitHub</span><a class="text-link" href="https://github.com/gnaneshwardammu" target="_blank" rel="noopener noreferrer">Visit GitHub profile <i class="fas fa-arrow-right"></i></a></div>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <div class="contact-inner">
+                <p class="eyebrow">04 — Get in touch</p>
+                <h2>Have an idea?<br><em>Let's talk.</em></h2>
+                <p>I'm always open to hearing about interesting projects, opportunities, or collaborations.</p>
+                <a class="btn btn-primary" href="mailto:gnaneshwardammu@gmail.com">gnaneshwardammu@gmail.com <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <div class="contact-details"><a href="tel:+919390194946"><i class="fas fa-phone"></i> +91 93901 94946</a><span></span><a href="https://www.linkedin.com/in/gnaneshwar-dammu-055233349" target="_blank" rel="noopener noreferrer">LinkedIn <i class="fas fa-arrow-up-right-from-square"></i></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner"><span>© 2026 Dammu Gnaneshwar</span><span>Designed & built with intention</span><div class="social-links"><a href="https://github.com/gnaneshwardammu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/gnaneshwar-dammu-055233349" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></div></div>
     </footer>
-
     <script src="aa.js"></script>
-</body>
-<script>
-// Mobile menu toggle
-const menuToggle = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
-
-function closeMenu() {
-    navLinks.classList.remove('active');
-    menuToggle.classList.remove('active');
-    menuToggle.setAttribute('aria-expanded', 'false');
-}
-
-function openMenu() {
-    navLinks.classList.add('active');
-    menuToggle.classList.add('active');
-    menuToggle.setAttribute('aria-expanded', 'true');
-}
-
-menuToggle.addEventListener('click', () => {
-    if (navLinks.classList.contains('active')) {
-        closeMenu();
-    } else {
-        openMenu();
-    }
-});
-
-// Optional: close menu when a link is clicked (for better UX)
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) closeMenu();
-    });
-});
-
-// Optional: close menu on outside click
-document.addEventListener('click', (e) => {
-    if (window.innerWidth > 768) return;
-    if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-        closeMenu();
-    }
-});
-</script>
 </body>
 </html>

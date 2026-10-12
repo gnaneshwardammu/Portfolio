@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#contact form").addEventListener("submit", function (event) {
-        event.preventDefault();
-        
-        let name = document.querySelector("input[name='name']").value;
-        let email = document.querySelector("input[name='email']").value;
-        let recipient = document.querySelector("input[name='recipient']").value;
-        let message = document.querySelector("textarea[name='message']").value;
-        
-        let mailtoLink = `mailto:${recipient}?subject=Message from ${name}&body=From: ${name} (${email})%0D%0A%0D%0A${message}`;
-        
-        window.location.href = mailtoLink;
-    });
+const menuToggle = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+function closeMenu() {
+    navLinks.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+}
+
+menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("active");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
 });
