@@ -60,7 +60,21 @@ h2 { font-size: clamp(2.4rem, 4.5vw, 4rem); letter-spacing: -.06em; margin-top: 
 .about-copy p + p { margin-top: 20px; }
 .about-copy .text-link { display: inline-block; margin-top: 30px; }
 .centered { text-align: center; }
-.skills-section { background: linear-gradient(180deg, transparent, rgba(24,35,38,.45)); width: 100%; }
+.experience-section { border-top: 1px solid var(--line); display: grid; gap: 90px; grid-template-columns: .8fr 1fr; }
+.experience-card { background: var(--ink-soft); border: 1px solid var(--line); border-radius: 10px; padding: 31px; }
+.experience-header { align-items: start; display: flex; gap: 24px; justify-content: space-between; }
+.experience-label, .experience-date { color: var(--muted-dark); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.experience-card h3 { font-size: 1.45rem; margin-top: 12px; }
+.experience-certificate { transition: color .25s; }
+.experience-certificate:hover { color: var(--mint); }
+.experience-certificate i { color: var(--mint); font-size: .75rem; margin-left: 6px; vertical-align: middle; }
+.sr-only { height: 1px; margin: -1px; overflow: hidden; position: absolute; width: 1px; clip: rect(0, 0, 0, 0); }
+.experience-date { color: var(--orange); white-space: nowrap; }
+.experience-role { color: var(--mint); font-size: .88rem; font-weight: 600; margin-top: 12px; }
+.experience-description { color: var(--muted); font-size: .9rem; margin-top: 20px; }
+.experience-card .tag-list { margin-top: 24px; }
+.skills-section { border-top: 1px solid var(--line); }
+.projects-section { border-top: 1px solid var(--line); }
 .skills-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); margin-top: 60px; }
 .skill-card { background: var(--ink-soft); border: 1px solid var(--line); border-radius: 10px; padding: 31px; transition: border-color .25s, transform .25s; }
 .skill-card:hover { border-color: rgba(194,245,213,.45); transform: translateY(-5px); }
@@ -114,6 +128,7 @@ h2 { font-size: clamp(2.4rem, 4.5vw, 4rem); letter-spacing: -.06em; margin-top: 
     .portrait-frame { height: 350px; width: 260px; }
     .about-section { gap: 0; grid-template-columns: 1fr; }
     .about-copy { padding-top: 35px; }
+    .experience-section { gap: 35px; grid-template-columns: 1fr; }
     .skills-grid, .projects-grid { grid-template-columns: 1fr; }
     .project-featured { display: block; grid-column: auto; }
     .project-featured .project-image { min-height: 0; }
@@ -123,6 +138,8 @@ h2 { font-size: clamp(2.4rem, 4.5vw, 4rem); letter-spacing: -.06em; margin-top: 
     .hero-actions { align-items: start; flex-direction: column; gap: 20px; }
     h1 { font-size: 3.2rem; }
     .section { padding-bottom: 80px; padding-top: 80px; }
+    .experience-card { padding: 25px; }
+    .experience-header { flex-direction: column; gap: 10px; }
     .contact-inner { padding: 50px 28px; }
     .contact-details { align-items: start; flex-direction: column; gap: 11px; margin-top: 40px; }
     .contact-details span { display: none; }
